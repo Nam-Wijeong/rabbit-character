@@ -1,5 +1,5 @@
 body {
-  background-color: #e8eaf6;
+  background-color: #e1bee7;
 }
 
 .rabbit {
@@ -11,6 +11,7 @@ body {
 
 .rabbit .ears {
   position: absolute;
+  top: 14px;
   width: 60px;
   height: 130px;
   background-color: #ffebee;
@@ -80,6 +81,23 @@ body {
   left: 3px;
 }
 
+.rabbit .blusher {
+  position: absolute;
+  top: 115px;
+  width: 32px;
+  height: 12px;
+  background-color: #f48fb1;
+  border-radius: 50%;
+}
+
+.blusher.left {
+  left: 10px;
+}
+
+.blusher.right {
+  right: 10px;
+}
+
 .rabbit .cheek {
   position: absolute;
   top: 190px;
@@ -142,7 +160,6 @@ body {
 
 .rabbit .arms {
   position: absolute;
-  top: 3px;
   width: 50px;
   height: 90px;
   background-color: #ffcdd2;
