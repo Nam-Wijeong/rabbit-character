@@ -1,0 +1,238 @@
+body {
+  background-color: #e8eaf6;
+}
+
+.rabbit {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+}
+
+.rabbit .ears {
+  position: absolute;
+  width: 60px;
+  height: 130px;
+  background-color: #ffebee;
+}
+
+.ears.left {
+  left: 90px;
+  transform: rotate(-35deg);
+  border-radius: 80% 50% 40% 40%;
+}
+
+.ears.right {
+  right: 90px;
+  transform: rotate(30deg);
+  border-radius: 50% 80% 40% 40%;
+}
+
+.rabbit .line {
+  position: absolute;
+  top: 60px;
+  width: 30px;
+  height: 80px;
+  background-color: #ffcdd2;
+}
+
+.line.left {
+  left: 15px;
+  border-radius: 80% 50% 40% 40%;
+}
+
+.line.right {
+  right: 15px;
+  border-radius: 50% 80% 40% 40%;
+}
+
+.rabbit .eyes {
+  position: absolute;
+  top: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.eyes.left {
+  left: 60px;
+}
+
+.eyes.right {
+  right: 60px;
+}
+
+.rabbit .white {
+  position: absolute;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.white.left {
+  left: 3px;
+}
+
+.white.right {
+  left: 3px;
+}
+
+.rabbit .cheek {
+  position: absolute;
+  top: 190px;
+  width: 90px;
+  height: 80px;
+  background-color: #ffebee;
+  border-radius: 50%;
+}
+
+.cheek.left {
+  left: 85px;
+}
+
+.cheek.right {
+  right: 85px;
+}
+
+.nose {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 20px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.mouth {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60px;
+  height: 30px;
+  background-color: rgba(243, 113, 135, 0.952);
+  border-radius: 10% 10% 50% 50%;
+}
+
+.tooth {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 12px;
+  height: 9px;
+  border-radius: 0 0 20% 20%;
+  background-color: white;
+}
+
+.rabbit .face {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  height: 190px;
+  background-color: #ffebee;
+  border-radius: 50% 50% 45% 45%;
+}
+
+.rabbit .arms {
+  position: absolute;
+  top: 3px;
+  width: 50px;
+  height: 90px;
+  background-color: #ffcdd2;
+  border-radius: 50%;
+}
+
+.arms.left {
+  left: 8px;
+  transform: rotate(-40deg);
+}
+
+.arms.right {
+  right: 8px;
+  transform: rotate(40deg);
+}
+
+.carrot {
+  position: absolute;
+  top: 20px;
+  left: 51%;
+  transform: translate(-50%) rotate(10deg);
+  width: 40px;
+  height: 65px;
+  border-radius: 20% 20% 50% 50%;
+  background-color: #ff7043;
+}
+
+.carrot_leaf {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #43a047;
+  border-radius: 50%;
+}
+
+.carrot_leaf.top {
+  top: 12px;
+  left: 51%;
+}
+
+.carrot_leaf.left {
+  left: 64px;
+  top: 16px;
+}
+
+.carrot_leaf.right {
+  right: 51px;
+  top: 18px;
+}
+
+.carrot_leaf.bottom {
+  top: 22px;
+  left: 50%;
+}
+
+.rabbit .legs {
+  position: absolute;
+  top: 302px;
+  width: 50px;
+  height: 30px;
+  background-color: #ffcdd2;
+}
+
+.legs.left {
+  left: 40px;
+  border-radius: 50% 30% 30% 30%;
+}
+
+.legs.right {
+  right: 40px;
+  border-radius: 30% 50% 30% 30%;
+}
+
+.tail {
+  position: absolute;
+  top: 250px;
+  left: 14px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffcdd2;
+  border-radius: 50%;
+}
+
+.rabbit .body {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 140px;
+  height: 140px;
+  background-color: #ffebee;
+  border-radius: 20% 20% 40% 40%;
+}
