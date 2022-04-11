@@ -21,12 +21,22 @@ body {
   left: 90px;
   transform: rotate(-35deg);
   border-radius: 80% 50% 40% 40%;
+  transition: all 200ms ease-in;
+}
+
+.ears.left:hover {
+  transform: rotate(-40deg);
 }
 
 .ears.right {
   right: 90px;
   transform: rotate(30deg);
   border-radius: 50% 80% 40% 40%;
+  transition: all 200ms ease-in;
+}
+
+.ears.right:hover {
+  transform: rotate(35deg);
 }
 
 .rabbit .line {
@@ -45,6 +55,57 @@ body {
 .line.right {
   right: 15px;
   border-radius: 50% 80% 40% 40%;
+}
+
+.carrot {
+  position: absolute;
+  width: 40px;
+  height: 65px;
+  top: -28px;
+  left: 50%;
+  transform: translate(-50%) rotate(70deg);
+  border-radius: 20% 20% 50% 50%;
+  background-color: #ff7043;
+}
+
+.carrot_line {
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  transform: rotate(90deg);
+  background-color: rgba(128, 128, 128, 0.418);
+}
+
+.carrot_line.top {
+  top: 10px;
+  right: 6px;
+}
+
+.carrot_line.bottom {
+  top: 20px;
+  right: 6px;
+}
+.carrot_leaf {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #43a047;
+  border-radius: 50%;
+}
+
+.carrot_leaf.top {
+  top: -16px;
+  left: 132px;
+}
+
+.carrot_leaf.left {
+  top: -18px;
+  left: 124px;
+}
+
+.carrot_leaf.right {
+  top: -9px;
+  right: 61px;
 }
 
 .rabbit .eyes {
@@ -86,7 +147,7 @@ body {
   top: 115px;
   width: 32px;
   height: 12px;
-  background-color: #f48fb1;
+  background-color: #f48fb1c9;
   border-radius: 50%;
 }
 
@@ -160,111 +221,22 @@ body {
 
 .rabbit .arms {
   position: absolute;
+  top: 2px;
   width: 50px;
   height: 90px;
   background-color: #ffcdd2;
-  border-radius: 50%;
+  border-radius: 45% 45% 50% 50%;
 }
 
 .arms.left {
-  left: 8px;
+  left: 7px;
   transform: rotate(-40deg);
 }
 
 .arms.right {
-  right: 8px;
+  right: 7px;
   transform: rotate(40deg);
 }
-
-.carrot {
-  position: absolute;
-  width: 40px;
-  height: 65px;
-  top: -28px;
-  left: 50%;
-  transform: translate(-50%) rotate(70deg);
-  border-radius: 20% 20% 50% 50%;
-  background-color: #ff7043;
-}
-
-.carrot_line {
-  position: absolute;
-  width: 4px;
-  height: 16px;
-  transform: rotate(90deg);
-  background-color: rgba(128, 128, 128, 0.418);
-}
-
-.carrot_line.top {
-  top: 10px;
-  right: 6px;
-}
-
-.carrot_line.bottom {
-  top: 20px;
-  right: 6px;
-}
-.carrot_leaf {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #43a047;
-  border-radius: 50%;
-}
-
-.carrot_leaf.top {
-  top: -16px;
-  left: 132px;
-}
-
-.carrot_leaf.left {
-  top: -18px;
-  left: 124px;
-}
-
-.carrot_leaf.right {
-  top: -9px;
-  right: 61px;
-}
-
-/* .carrot {
-  position: absolute;
-  top: 20px;
-  left: 51%;
-  transform: translate(-50%) rotate(10deg);
-  width: 40px;
-  height: 65px;
-  border-radius: 20% 20% 50% 50%;
-  background-color: #ff7043;
-}
-
-.carrot_leaf {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #43a047;
-  border-radius: 50%;
-}
-
-.carrot_leaf.top {
-  top: 12px;
-  left: 51%;
-}
-
-.carrot_leaf.left {
-  left: 64px;
-  top: 16px;
-}
-
-.carrot_leaf.right {
-  right: 51px;
-  top: 18px;
-}
-
-.carrot_leaf.bottom {
-  top: 22px;
-  left: 50%;
-} */
 
 .rabbit .legs {
   position: absolute;
@@ -286,12 +258,27 @@ body {
 
 .tail {
   position: absolute;
-  top: 250px;
-  left: 14px;
-  width: 40px;
-  height: 40px;
+  /* top: 250px;
+  left: 14px; */
+  width: 25px;
+  height: 25px;
   background-color: #ffcdd2;
   border-radius: 50%;
+}
+
+.tail.top {
+  top: 226px;
+  left: 20px;
+}
+
+.tail.middle {
+  top: 240px;
+  left: 11px;
+}
+
+.tail.bottom {
+  top: 254px;
+  left: 21px;
 }
 
 .rabbit .body {
