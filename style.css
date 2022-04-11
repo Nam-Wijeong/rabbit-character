@@ -1,3 +1,31 @@
+@keyframes left_ear {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(-45deg) translate(-10px);
+  }
+}
+
+@keyframes right_ear {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(45deg) translate(10px);
+  }
+}
+
+@keyframes cheek {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 body {
   background-color: #e1bee7;
 }
@@ -15,6 +43,7 @@ body {
   width: 60px;
   height: 130px;
   background-color: #ffebee;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
 }
 
 .ears.left {
@@ -22,21 +51,15 @@ body {
   transform: rotate(-35deg);
   border-radius: 80% 50% 40% 40%;
   transition: all 200ms ease-in;
-}
-
-.ears.left:hover {
-  transform: rotate(-40deg);
+  animation: left_ear 3s infinite;
 }
 
 .ears.right {
   right: 90px;
-  transform: rotate(30deg);
+  transform: rotate(35deg);
   border-radius: 50% 80% 40% 40%;
   transition: all 200ms ease-in;
-}
-
-.ears.right:hover {
-  transform: rotate(35deg);
+  animation: right_ear 3s infinite;
 }
 
 .rabbit .line {
@@ -66,6 +89,7 @@ body {
   transform: translate(-50%) rotate(70deg);
   border-radius: 20% 20% 50% 50%;
   background-color: #ff7043;
+  animation: carrot 2s infinite;
 }
 
 .carrot_line {
@@ -166,14 +190,17 @@ body {
   height: 80px;
   background-color: #ffebee;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
 }
 
 .cheek.left {
   left: 85px;
+  animation: cheek 3s infinite;
 }
 
 .cheek.right {
   right: 85px;
+  animation: cheek 3s infinite;
 }
 
 .nose {
@@ -244,6 +271,7 @@ body {
   width: 50px;
   height: 30px;
   background-color: #ffcdd2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
 }
 
 .legs.left {
@@ -258,12 +286,11 @@ body {
 
 .tail {
   position: absolute;
-  /* top: 250px;
-  left: 14px; */
   width: 25px;
   height: 25px;
   background-color: #ffcdd2;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
 }
 
 .tail.top {
